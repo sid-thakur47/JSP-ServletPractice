@@ -14,13 +14,13 @@ Gender of Student: ${param.gender}
 <!-- diplay list of languages -->
 Favourite language of student
 <% 
-String[] langs=request.getParameterValues("language");
+String[] langs=request   .getParameterValues("language");
 if (langs != null) {
 	for(String templangs:langs){
 		out.println("<li>"+templangs+"</li>");
 	}
 }      
-%>
+%>   
 </h4>
 </body>
 </html>
