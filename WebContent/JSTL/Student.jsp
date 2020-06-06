@@ -21,9 +21,13 @@
 			<tr>
 				<td>${tempStudent.name}</td>
 				<td>${tempStudent.lastName}</td>
-				<td>${tempStudent.goldCustomer}</td>
+				<td><c:if test="${tempStudent.goldCustomer}">
+				Special Discount
+				 </c:if> <c:if test="${not tempStudent.goldCustomer}">
+				No Discount
+				 </c:if>
 			</tr>
-			<br />  
+			<br />
 		</c:forEach>
 	</table>
 </body>
